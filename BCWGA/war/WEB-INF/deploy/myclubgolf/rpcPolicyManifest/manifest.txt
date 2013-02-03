@@ -1,0 +1,3 @@
+# Module myclubgolf
+# RPC service class, partial path of RPC policy file
+com.sdbarletta.bcwga.client.EmailService, 5E139B9762756C79684D5768B25F5988.gwt.rpc
