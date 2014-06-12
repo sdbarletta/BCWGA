@@ -40,7 +40,7 @@ public class MyClubGolf implements EntryPoint {
 
 	private static CaptionPanel homePage = getHomePage();
 	private static HTML calendarPage = getGoogleCalendar();
-	private static FlowPanel specialEventsPage = getSpecialEventsPage();
+	//private static FlowPanel specialEventsPage = getSpecialEventsPage();
 	private static FormPanel contactUsPage = getContactUsPage();
 	public static TabPanel tabPanel = getTabPanel();
 	
@@ -78,9 +78,9 @@ public class MyClubGolf implements EntryPoint {
 		// Set up Home page
 		CaptionPanel page = new CaptionPanel("Welcome!");
 		HTML homeHtml = new HTML("<br/><br/><p>Do you love to play golf, or are you interested in learning how to play golf in a friendly, welcoming environment? You've come to the right place!</p>"+
-				"<p>Our ladies group plays every Tuesday at the <a href='"+muniLink+"'><b>Boulder City Municipal Golf Course</b></a>, tee-time 7am Spring/Summer/Fall and 7:30am Winter.</p>"+
+				"<p>Our ladies group plays every Tuesday at the <a href='"+muniLink+"'><b>Boulder City Municipal Golf Course</b></a>, tee-time 7:30am Spring/Summer/Fall and 8:30am Winter.</p>"+
 				"<p>To get a membership application, click the 'Membership Application' tab. " +
-				"To see upcoming events at the club, click the 'Calendar' or 'Special Events' tab. " +
+				"To see upcoming events at the club, click the 'Calendar' tab. " +
 				"<p>For all other questions, please click the 'Contact Us' tab.</p>"
 				);
 		page.add(homeHtml);
@@ -287,7 +287,7 @@ public class MyClubGolf implements EntryPoint {
 		tp.add(homePage, "Home");
 		tp.add(new HTML("<h3>Loading Membership Application ...</h3>"), "Membership Application");
 		tp.add(calendarPage, "Calendar");
-		tp.add(specialEventsPage, "Special Events");
+		//tp.add(specialEventsPage, "Special Events");
 		tp.add(contactUsPage, "Contact Us");
 
 		tp.selectTab(0);
